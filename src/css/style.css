@@ -1,0 +1,252 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Qwigley&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/* Custom Styles */
+body {
+  background-image: url("https://cdn.wallpaperhub.app/cloudcache/7/4/f/3/d/5/74f3d51cbec9db78da32e103de1b28538af1b76a.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: fit;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Todo List Styles */
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.todo-list-item {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-item h3 {
+  margin: 0;
+}
+
+.todo-list-item p {
+  margin: 5px 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.todo-list-item button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+
+.delete-btn:hover,
+.complete-btn:hover,
+.edit-btn:hover {
+  filter: brightness(0.9);
+}
+
+/* Completed Todo List Styles */
+.completed-todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completed-todo-list .todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #d9ead3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completed-todo-list .todo-list-item h3 {
+  margin: 0;
+}
+
+.completed-todo-list .todo-list-item p {
+  margin: 5px 0;
+}
+
+.completed-todo-list .todo-list-item button {
+  padding: 8px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.completed-todo-list .delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.completed-todo-list .delete-btn:hover {
+  filter: brightness(0.9);
+}
+
+/* Todo Input Styles */
+.todo-input {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todo-input-item {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #333;
+}
+
+.todo-input-item label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.todo-input-item input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.todo-input-item input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.todo-input-item button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-input-item button:hover {
+  background-color: #0056b3;
+}
+
+/* App Styles */
+.App {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn-area {
+  margin-bottom: 20px;
+}
+
+.secondaryBtn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+}
+
+.secondaryBtn.active {
+  background-color: #333;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+.secondaryBtn.false {
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.primaryBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+}
+
+.primaryBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .todo-input .todo-input-item input[type="text"],
+  .todo-input .todo-input-item button {
+    width: calc(100% - 20px);
+    margin-right: 10px;
+  }
+
+  .todo-input .todo-input-item button {
+    margin-top: 10px;
+  }
+
+  .todo-list .todo-list-item,
+  .completed-todo-list .todo-list-item {
+    max-width: 100%;
+  }
+}
